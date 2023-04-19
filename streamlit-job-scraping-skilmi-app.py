@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from selenium import webdriver
+#from selenium import webdriver
 from functions_job_scraping import main
 
 # Configure the WebDriver
@@ -14,8 +14,6 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 driver = webdriver.Chrome(executable_path=webdriver_path, options=chrome_options)
 
 # Your existing Streamlit code
-st.title("LinkedIn Job Scraper")
-
 st.title("LinkedIn Job Scraper")
 
 country_list = ["Canada", "France", "Erevan Armenia", "Turkey", "Spain", "Italy", "United-Kingdom", "Portugal",
