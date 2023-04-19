@@ -4,11 +4,11 @@ import pandas as pd
 #from functions_job_scraping import main
 
 # Configure the WebDriver
-webdriver_path = "./chromedriver"  # Update this to the path of your WebDriver executable
-chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument('--headless')
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--disable-dev-shm-usage')
+# webdriver_path = "./chromedriver"  # Update this to the path of your WebDriver executable
+# chrome_options = webdriver.ChromeOptions()
+# chrome_options.add_argument('--headless')
+# chrome_options.add_argument('--no-sandbox')
+# chrome_options.add_argument('--disable-dev-shm-usage')
 
 # Initialize the WebDriver
 driver = webdriver.Chrome(executable_path=webdriver_path, options=chrome_options)
