@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 #from selenium import webdriver
-from functions_job_scraping import main
+#from functions_job_scraping import main
 
 # Configure the WebDriver
 webdriver_path = "./chromedriver"  # Update this to the path of your WebDriver executable
@@ -38,7 +38,7 @@ selected_country = st.selectbox("Select a country:", country_list)
 selected_job_target = st.selectbox("Select a job target:", job_target_list)
 num_pages = st.number_input("Select the number of pages to scrape:", min_value=1, value=1)
 
-if st.button("Scrape"):
-    job_data = main(selected_job_target, selected_country)
-    st.write(job_data.head(10))
+# if st.button("Scrape"):
+#     job_data = main(selected_job_target, selected_country)
+#     st.write(job_data.head(10))
 
