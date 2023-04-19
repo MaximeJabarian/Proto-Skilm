@@ -11,7 +11,7 @@ import pandas as pd
 # chrome_options.add_argument('--disable-dev-shm-usage')
 
 # Initialize the WebDriver
-driver = webdriver.Chrome(executable_path=webdriver_path, options=chrome_options)
+# driver = webdriver.Chrome(executable_path=webdriver_path, options=chrome_options)
 
 # Your existing Streamlit code
 st.title("LinkedIn Job Scraper")
